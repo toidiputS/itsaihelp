@@ -24,6 +24,16 @@ interface AgentIconProps {
     variant: AgentIconVariant;
 }
 
+// Map variants to custom SVG logos
+const customLogoMap: Record<string, string | null> = {
+    contentDirector: "/agents/GammaLogo.svg", // Agent Gamma
+    emailArchitect: "/agents/BetaLogo.svg",   // Agent Beta
+    productPage: "/agents/AlphaLogo.svg",     // Agent Alpha
+    customerResponse: "/agents/DeltaLogo.svg", // Agent Delta
+    marketInsights: "/agents/EpsilonLogo.svg", // Agent Epsilon
+};
+
+// Fallback Lucide icons
 const iconMap: Record<AgentIconVariant, React.ReactNode> = {
     promptVault: <Box className="w-5 h-5 animate-icon-bounce" />,
     lab: <Rocket className="w-5 h-5 animate-icon-spin" />,
@@ -36,6 +46,8 @@ const iconMap: Record<AgentIconVariant, React.ReactNode> = {
 };
 
 export const AgentIcon: React.FC<AgentIconProps> = ({ variant }) => {
+    const customLogo = customLogoMap[variant];
+
     return (
         <span
             className="
@@ -48,7 +60,15 @@ export const AgentIcon: React.FC<AgentIconProps> = ({ variant }) => {
         border border-yellow-400/10
       "
         >
-            {iconMap[variant]}
+            {customLogo ? (
+                <img
+                    src={customLogo}
+                    alt={variant}
+                    className="w-6 h-6 object-contain"
+                />
+            ) : (
+                iconMap[variant]
+            )}
         </span>
     );
 };
