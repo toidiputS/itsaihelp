@@ -28,12 +28,22 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-slate-950 text-slate-50">
+      {/* LOGO */}
+      <div className="w-full flex justify-center bg-slate-950">
+        <img
+          src="/LogoFull.svg"
+          alt="ItsAI.Help Logo"
+          className="w-full max-w-[200px] md:max-w-md lg:max-w-xl object-contain"
+          style={{ mixBlendMode: 'normal' }}
+        />
+      </div>
+
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden pt-20 pb-24 lg:pt-32 lg:pb-32 bg-slate-950">
+      <section className="relative overflow-hidden pt-1 pb-16 lg:pt-2 lg:pb-24 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-transparent border border-yellow-400 mb-8">
+          <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-transparent border-0 mb-6">
             <span className="flex h-2 w-2 rounded-full bg-yellow-400 mr-2 animate-pulse"></span>
-            <span className="text-sm font-medium text-yellow-400">New: The 5K Sprint is open</span>
+            <span className="text-xs font-medium text-yellow-400">New: The 5K Sprint is open</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-50 tracking-tight mb-6">
