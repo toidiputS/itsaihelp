@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ItsAI.Help | Make Money with AI</title>
-    <meta name="description" content="The ItsAI.Help ecosystem features the Prompt Vault, Done-For-You Lab, and the flagship 5K Sprint™ to help you build your first digital income stream." />
+    <meta name="description" content="The ItsAI.Help ecosystem features the Prompt Vault, Lab, and the Done-For-You flagship 5K Sprint™ to help you build your first digital income stream." />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -45,18 +45,28 @@
 
       gtag('config', 'G-W6WCH18TM1');
     </script>
-    <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
-  }
-}
-</script>
+    <!-- Importmap polyfill for older Safari versions (iOS < 16.4) -->
+    <script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+    <script>
+      // Dynamically create importmap to ensure Safari compatibility
+      window.addEventListener('DOMContentLoaded', function() {
+        const importmap = {
+          "imports": {
+            "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+            "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+            "react/": "https://aistudiocdn.com/react@^19.2.0/",
+            "react": "https://aistudiocdn.com/react@^19.2.0",
+            "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+            "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+          }
+        };
+        
+        const script = document.createElement('script');
+        script.type = 'importmap';
+        script.textContent = JSON.stringify(importmap, null, 2);
+        document.head.appendChild(script);
+      });
+    </script>
     <link rel="stylesheet" href="/index.css">
   </head>
   <body>
