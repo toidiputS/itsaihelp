@@ -38,9 +38,6 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <Link to="/5k-sprint">
-              <Button size="sm" variant="secondary">Join 5K Sprint</Button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,11 +69,6 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4">
-              <Link to="/5k-sprint" onClick={() => setIsOpen(false)}>
-                <Button className="w-full" variant="secondary">Join 5K Sprint</Button>
-              </Link>
-            </div>
           </div>
         </div>
       )}

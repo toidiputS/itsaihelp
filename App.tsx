@@ -8,6 +8,8 @@ import DfyLab from "./pages/DfyLab";
 import Assistants from "./pages/Assistants";
 import Sprint5k from "./pages/Sprint5k";
 import ContentReactorPack from "./pages/ContentReactorPack";
+import Pack1 from "./pages/Pack1";
+import Pack3 from "./pages/Pack3";
 import PromptingCourse from "./pages/PromptingCourse";
 
 import Navbar from "./components/Navbar";
@@ -21,7 +23,9 @@ import ScrollToTop from "./components/ScrollToTop";
  * Routes:
  *  - /                      → Home
  *  - /prompt-vault          → Prompt Vault index
- *  - /prompt-vault/viral-content-pack → Product detail page
+ *  - /prompt-vault/content-reactor → Content Reactor Pack
+ *  - /prompt-vault/pack1    → Pack 1
+ *  - /prompt-vault/pack3    → Pack 3
  *  - /dfy-lab               → Done-For-You Lab
  *  - /assistants            → AI Assistants
  *  - /5k-sprint             → 5K Sprint program page
@@ -41,6 +45,14 @@ const App: React.FC = () => {
             <Route
               path="/prompt-vault/content-reactor"
               element={<ContentReactorPack />}
+            />
+            <Route
+              path="/prompt-vault/pack1"
+              element={<Pack1 />}
+            />
+            <Route
+              path="/prompt-vault/pack3"
+              element={<Pack3 />}
             />
             <Route path="/dfy-lab" element={<DfyLab />} />
             <Route path="/assistants" element={<Assistants />} />

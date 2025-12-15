@@ -1,19 +1,19 @@
-// pages/ContentReactorPack.tsx
+// pages/Pack3.tsx
 import React from "react";
 
 /**
- * ItsAI.Help Content Reactor Pack™
+ * ItsAI.Help Prompt Pack 3
  *
- * Product detail page for the first prompt pack.
+ * Product detail page for the third prompt pack.
  * - EXACT name + promise from your spec.
  * - No renamed product, no extra packs.
  *
  * NOTE:
  *  - Update `handleBuyClick` with your real checkout link.
- *  - Make sure the PDF lives at: /public/downloads/ItsAI_Help_Content_Reactor_Pack.pdf
+ *  - Make sure the PDF lives at: /public/downloads/ItsAI_Help_Pack3.pdf
  */
 
-const ContentReactorPack: React.FC = () => {
+const Pack3: React.FC = () => {
     const handleBuyClick = () => {
         // TODO: Replace this with your real checkout URL (Stripe, LemonSqueezy, etc.)
         // Example:
@@ -27,13 +27,13 @@ const ContentReactorPack: React.FC = () => {
             <p className="text-sm text-slate-400 mb-4">
                 Prompt Vault /{" "}
                 <span className="text-slate-100">
-                    ItsAI.Help Content Reactor Pack™
+                    ItsAI.Help Prompt Pack 3
                 </span>
             </p>
 
             {/* Title + tagline */}
             <h1 className="text-3xl md:text-4xl font-bold text-slate-50 mb-2">
-                ItsAI.Help Content Reactor Pack™
+                ItsAI.Help Prompt Pack 3
             </h1>
             <p className="text-slate-300 mb-6">
                 A complete system for producing high-performing content across all major
@@ -153,4 +153,4 @@ const ContentReactorPack: React.FC = () => {
     );
 };
 
-export default ContentReactorPack;
+export default Pack3;

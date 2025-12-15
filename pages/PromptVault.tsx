@@ -1,18 +1,19 @@
 // pages/PromptVault.tsx
 import React from "react";
 import { Link } from "react-router-dom";
+import { Card } from "../components/UI";
 
 /**
  * PromptVault
  *
- * Shows the 4 core ItsAI.Help prompt packs:
- *  - Content Reactor Pack™
- *  - Sales Engine Pack™
- *  - Brand Blueprint Pack™
- *  - Side Hustle Kickstart Pack™
+ * Shows the 5 ItsAI.Help prompt packs:
+ *  - The $0 → $1K Blueprint
+ *  - Content Reactor
+ *  - Conversion Scripts Vault
+ *  - The Resolution Prompting Handbook
+ *  - Viral Offer Lab
  *
- * Only the Content Reactor Pack needs to be live right now;
- * the others can point to "Coming Soon" or placeholder routes until built.
+ * All packs are live at $39.
  */
 
 const PromptVault: React.FC = () => {
@@ -21,143 +22,130 @@ const PromptVault: React.FC = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-slate-50 mb-2">
         ItsAI.Help Prompt Vault
       </h1>
+      <p className="text-slate-300 mb-4 max-w-2xl">
+        Beginner-friendly, high-impact prompt packs designed to help you launch faster.
+      </p>
+      <p className="text-sm text-slate-400 mb-4 italic">
+        Normally $99 each - Happy Holidays - These are not PDFs. They are weapons.
+      </p>
       <p className="text-slate-300 mb-8 max-w-2xl">
-        Beginner-friendly, high-impact prompt packs designed to help you launch
-        faster. Copy, paste, customize, and let AI handle the heavy lifting.
+        Copy, paste, customize, and let AI handle the heavy lifting.
       </p>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        {/* 1. Content Reactor Pack */}
-        <article className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
-          <div className="mb-4">
-            <p className="text-xs font-semibold text-indigo-400 mb-1 uppercase tracking-wide">
-              Starter · Live
-            </p>
-            <h2 className="text-lg font-semibold text-slate-50 mb-1">
-              ItsAI.Help Content Reactor Pack™
-            </h2>
-            <p className="text-sm text-slate-300">
-              A complete system for producing high-performing content across all
-              major platforms—without spending hours planning every post.
-            </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* PACK 1 */}
+        <Card className="card-gold h-full p-8">
+          <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 1</h3>
+          <h4 className="font-semibold text-lg mb-4">The $0 → $1K Blueprint</h4>
+          <p className="text-sm text-slate-400 mb-4 italic">(This is the pack you pray exists somewhere. Merry Christmas.)</p>
+          <p className="text-sm text-slate-400 mb-4">"The First Money Machine."</p>
+
+          <div className="space-y-2 text-sm text-slate-300 mb-6">
+            <p>What's inside:</p>
+            <ul className="space-y-1 text-xs">
+              <li>• 30 days of tasks (no fluff — prompts + execution)</li>
+              <li>• 10 plug-and-play offers ANYONE can sell</li>
+              <li>• 25 proven AI workflows that replace 5 contractors</li>
+              <li>• 10 short-form scripts for instant authority</li>
+              <li>• 20 social posts engineered for visibility</li>
+              <li>• 10 DM scripts (with the psychology explained)</li>
+              <li>• 7 sales angles you can reuse forever</li>
+              <li>• 1 "Launch in a day" workflow</li>
+              <li>• 1 "Sell without selling" messaging system</li>
+            </ul>
           </div>
 
-          <div className="flex items-center justify-between mt-2">
-            <div>
-              <p className="text-slate-100 font-semibold text-lg">$9</p>
-              <p className="text-xs text-slate-500">PDF · Instant Download</p>
-            </div>
+          <div>
+            <p className="text-slate-100 font-semibold text-lg">$39</p>
             <Link
-              to="/prompt-vault/content-reactor"
-              className="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-white text-sm font-semibold transition-colors"
+              to="/prompt-vault/pack1"
+              className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
             >
               View Details
             </Link>
           </div>
-        </article>
+        </Card>
 
-        {/* 2. Sales Engine Pack */}
-        <article className="bg-slate-900/40 border border-slate-800/70 rounded-2xl p-5 flex flex-col justify-between">
-          <div className="mb-4">
-            <p className="text-xs font-semibold text-amber-400 mb-1 uppercase tracking-wide">
-              Coming Soon
-            </p>
-            <h2 className="text-lg font-semibold text-slate-50 mb-1">
-              ItsAI.Help Sales Engine Pack™
-            </h2>
-            <p className="text-sm text-slate-300">
-              Turn your AI into a predictable sales generator. Focused on
-              conversion psychology, persuasion frameworks, and marketing
-              automation prompts.
-            </p>
-            <ul className="mt-2 text-xs text-slate-400 space-y-1">
-              <li>• 10-email nurture sequences</li>
-              <li>• Launch & promotion sequences</li>
-              <li>• Offer-builder & lead magnet prompts</li>
-              <li>• Follow-up & re-engagement prompts</li>
+        {/* PACK 2 */}
+        <Card className="card-gold h-full p-8">
+          <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 2</h3>
+          <h4 className="font-semibold text-lg mb-4">Content Reactor</h4>
+          <p className="text-sm text-slate-400 mb-4 italic">(Content = Attention = Income. Stop freezing. Maintain consistency with this and you will find your audience.)</p>
+          <p className="text-sm text-slate-400 mb-4">"The Attention Engine."</p>
+
+          <div className="space-y-2 text-sm text-slate-300 mb-6">
+            <p>What's inside:</p>
+            <ul className="space-y-1 text-xs">
+              <li>• 90 prompts: viral threads, reels, shorts, carousels</li>
+              <li>• 12 content structures that ALWAYS perform</li>
+              <li>• 30-day done-for-you content calendar</li>
+              <li>• 50 hooks engineered for scroll-stop</li>
+              <li>• The "Gamma method" simplified for beginners</li>
+              <li>• 10 CTA templates that don't feel salesy</li>
+              <li>• 1 "instantly become a creator" crash system</li>
             </ul>
           </div>
-          <div className="flex items-center justify-between mt-2 opacity-70">
-            <div>
-              <p className="text-slate-100 font-semibold text-lg">$29</p>
-              <p className="text-xs text-slate-500">Planned</p>
-            </div>
-            <button
-              disabled
-              className="inline-flex items-center px-4 py-2 rounded-xl bg-slate-800 text-slate-500 text-sm font-semibold cursor-not-allowed"
-            >
-              Coming Soon
-            </button>
-          </div>
-        </article>
 
-        {/* 3. Brand Blueprint Pack */}
-        <article className="bg-slate-900/40 border border-slate-800/70 rounded-2xl p-5 flex flex-col justify-between">
-          <div className="mb-4">
-            <p className="text-xs font-semibold text-amber-400 mb-1 uppercase tracking-wide">
-              Coming Soon
-            </p>
-            <h2 className="text-lg font-semibold text-slate-50 mb-1">
-              ItsAI.Help Brand Blueprint Pack™
-            </h2>
-            <p className="text-sm text-slate-300">
-              A powerful identity-building toolkit for new creators,
-              entrepreneurs, or businesses needing clarity and consistency.
-            </p>
-            <ul className="mt-2 text-xs text-slate-400 space-y-1">
-              <li>• Platform-specific bio prompts</li>
-              <li>• Brand voice generator</li>
-              <li>• Taglines, slogans, positioning</li>
-              <li>• Aesthetic & messaging frameworks</li>
+          <div>
+            <p className="text-slate-100 font-semibold text-lg">$39</p>
+            <Link
+              to="/prompt-vault/content-reactor"
+              className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
+            >
+              View Details
+            </Link>
+          </div>
+        </Card>
+
+        {/* PACK 3 */}
+        <Card className="card-gold h-full p-8">
+          <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 3</h3>
+          <h4 className="font-semibold text-lg mb-4">Conversion Scripts Vault</h4>
+          <p className="text-sm text-slate-400 mb-4 italic">(Most people SUCK at writing. I might cause this is straight out of my personal vault. No shame in conversion.)</p>
+          <p className="text-sm text-slate-400 mb-4">"Say Exactly The Right Thing — Every Time."</p>
+
+          <div className="space-y-2 text-sm text-slate-300 mb-6">
+            <p>What's inside:</p>
+            <ul className="space-y-1 text-xs">
+              <li>• 20 sales email templates</li>
+              <li>• 20 landing page templates</li>
+              <li>• 15 value ladder frameworks</li>
+              <li>• 5 done-for-you offer stacks</li>
+              <li>• 10 "explain your product" clarity scripts</li>
+              <li>• 10 scarcity sequences</li>
+              <li>• 10 rebuttal templates so good they feel illegal</li>
+              <li>• Delta-style plug-and-play flows</li>
             </ul>
           </div>
-          <div className="flex items-center justify-between mt-2 opacity-70">
-            <div>
-              <p className="text-slate-100 font-semibold text-lg">$29</p>
-              <p className="text-xs text-slate-500">Planned</p>
-            </div>
-            <button
-              disabled
-              className="inline-flex items-center px-4 py-2 rounded-xl bg-slate-800 text-slate-500 text-sm font-semibold cursor-not-allowed"
-            >
-              Coming Soon
-            </button>
-          </div>
-        </article>
 
-        {/* 4. Side Hustle Kickstart Pack */}
-        <article className="bg-slate-900/40 border border-slate-800/70 rounded-2xl p-5 flex flex-col justify-between">
-          <div className="mb-4">
-            <p className="text-xs font-semibold text-amber-400 mb-1 uppercase tracking-wide">
-              Coming Soon
-            </p>
-            <h2 className="text-lg font-semibold text-slate-50 mb-1">
-              ItsAI.Help Side Hustle Kickstart Pack™
-            </h2>
-            <p className="text-sm text-slate-300">
-              Perfect for total beginners looking to launch a new income stream
-              fast, with step-by-step guided prompts.
-            </p>
-            <ul className="mt-2 text-xs text-slate-400 space-y-1">
-              <li>• Niche selection prompts</li>
-              <li>• Service creation & offer prompts</li>
-              <li>• Pricing formulas for all tiers</li>
-              <li>• Warm DM & “start today” scripts</li>
-            </ul>
-          </div>
-          <div className="flex items-center justify-between mt-2 opacity-70">
-            <div>
-              <p className="text-slate-100 font-semibold text-lg">$29</p>
-              <p className="text-xs text-slate-500">Planned</p>
-            </div>
-            <button
-              disabled
-              className="inline-flex items-center px-4 py-2 rounded-xl bg-slate-800 text-slate-500 text-sm font-semibold cursor-not-allowed"
+          <div>
+            <p className="text-slate-100 font-semibold text-lg">$39</p>
+            <Link
+              to="/prompt-vault/pack3"
+              className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
             >
-              Coming Soon
-            </button>
+              View Details
+            </Link>
           </div>
-        </article>
+        </Card>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        {/* PACK 4 */}
+        <Card className="card-gold h-full p-8">
+          <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 4</h3>
+          <h4 className="font-semibold text-lg mb-4">The Resolution Prompting Handbook</h4>
+          <p className="text-sm text-slate-400 mb-4 italic">(Change Your Life with 100 Prompts.)</p>
+          <p className="text-slate-300 mb-4">"These will change more than just your life."</p>
+        </Card>
+
+        {/* PACK 5 */}
+        <Card className="card-gold h-full p-8">
+          <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 5</h3>
+          <h4 className="font-semibold text-lg mb-4">Viral Offer Lab</h4>
+          <p className="text-sm text-slate-400 mb-4 italic">(Turn Any Idea into a Sellable Offer in 10 Minutes.)</p>
+          <p className="text-slate-300 mb-4">"How FAST can you build a micro-offer. Create better content with pro-level results."</p>
+        </Card>
       </div>
     </main>
   );
