@@ -134,7 +134,7 @@ const Home: React.FC = () => {
     document.title = "Home | ItsAI.Help - Make Money with AI";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Bet You have never made a single penny online. Make your first $1 on your way to $5k within the ItsAI Ecosystem with our AI Assistants you keep on your homescreen and much more.'); 
+      metaDesc.setAttribute('content', 'Bet You have never made a single penny online. Make your first $1 on your way to $5k within the ItsAI Ecosystem. Access our Prompt Vault, AI Assistants you keep on your homescreen and much more.');
     }
   }, []);
 
@@ -168,12 +168,16 @@ const Home: React.FC = () => {
             No hero. No guru. Just a new you.
 </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
-            <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
+            <Link to="/welcome">
               <button className="btn-reflection-gold">
-                $97 Founders lifetime
+                Pay $1, 97 times over 97 min/ mo or pay $97 one time/ lifetime
               </button>
-            </a>
-          
+            </Link>
+            <Link to="/welcome">
+              <button className="btn-reflection-silver">
+                ItsAI Core Founders Edition Lifetime System Access
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -235,16 +239,16 @@ const Home: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
-              <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
+              <Link to="/welcome">
                 <button className="btn-reflection-gold">
-                  founders Lifetime $97
+                  Get Instant Access - $97
                 </button>
-              </a>
-              <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <Link to="/welcome">
                 <button className="btn-reflection-outline">
                   Pay $1 - 97 times/mo
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -351,9 +355,9 @@ const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl font-bold text-slate-50 mb-8">Ready to stop watching and start building?</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
-            <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
+            <Link to="/welcome">
               <button className="btn-reflection-gold">Get ItsAI Core Founders Edition</button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

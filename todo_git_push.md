@@ -1,0 +1,5 @@
+- [ ] Check current git status and uncommitted changes
+- [ ] Stage any uncommitted changes if needed
+- [ ] Commit any staged changes with appropriate message
+- [ ] Push changes to remote repository
+- [ ] Verify push was successful
