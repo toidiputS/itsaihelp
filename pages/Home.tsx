@@ -168,16 +168,16 @@ const Home: React.FC = () => {
             No hero. No guru. Just a new you.
 </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
-            <Link to="/welcome">
+            <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
               <button className="btn-reflection-gold">
                 Pay $1, 97 times over 97 min/ mo or pay $97 one time/ lifetime
               </button>
-            </Link>
-            <Link to="/welcome">
+            </a>
+            <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
               <button className="btn-reflection-silver">
                 ItsAI Core Founders Edition Lifetime System Access
               </button>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -239,16 +239,16 @@ const Home: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
-              <Link to="/welcome">
+              <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
                 <button className="btn-reflection-gold">
                   Get Instant Access - $97
                 </button>
-              </Link>
-              <Link to="/welcome">
+              </a>
+              <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
                 <button className="btn-reflection-outline">
                   Pay $1 - 97 times/mo
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -355,9 +355,9 @@ const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl font-bold text-slate-50 mb-8">Ready to stop watching and start building?</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
-            <Link to="/welcome">
+            <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
               <button className="btn-reflection-gold">Get ItsAI Core Founders Edition</button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

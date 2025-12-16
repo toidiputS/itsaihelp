@@ -9,8 +9,6 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Prompt Vault', path: '/prompt-vault' },
-    { name: 'Assistants', path: '/assistants' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

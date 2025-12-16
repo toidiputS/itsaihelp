@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Welcome from "./pages/Welcome";
-import PromptVault from "./pages/PromptVault";
-import Assistants from "./pages/Assistants";
 import Sprint5k from "./pages/Sprint5k";
 import ContentReactorPack from "./pages/ContentReactorPack";
 import Pack1 from "./pages/Pack1";
@@ -43,7 +41,6 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/welcome" element={<Welcome />} />
-            <Route path="/prompt-vault" element={<PromptVault />} />
             <Route
               path="/prompt-vault/content-reactor"
               element={<ContentReactorPack />}
@@ -56,7 +53,6 @@ const App: React.FC = () => {
               path="/prompt-vault/pack3"
               element={<Pack3 />}
             />
-            <Route path="/assistants" element={<Assistants />} />
             <Route path="/5k-sprint" element={<Sprint5k />} />
             <Route path="/prompting-course" element={<PromptingCourse />} />
           </Routes>
