@@ -20,7 +20,6 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="/prompt-vault" className="hover:text-brand-400 transition-colors">Prompt Vault</a></li>
-              <li><a href="/dfy-lab" className="hover:text-brand-400 transition-colors">DFY Lab</a></li>
               <li><a href="/assistants" className="hover:text-brand-400 transition-colors">AI Assistants</a></li>
               <li><a href="/5k-sprint" className="hover:text-brand-400 transition-colors">5K Sprint</a></li>
             </ul>
@@ -38,9 +37,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-brand-400"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-brand-400"><Youtube className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-brand-400"><Mail className="w-5 h-5" /></a>
+              <a href="#" title="Visit our Twitter" className="hover:text-brand-400"><Twitter className="w-5 h-5" /></a>
+              <a href="#" title="Visit our YouTube channel" className="hover:text-brand-400"><Youtube className="w-5 h-5" /></a>
+              <a href="#" title="Send us an email" className="hover:text-brand-400"><Mail className="w-5 h-5" /></a>
             </div>
             <p className="mt-4 text-xs text-slate-500">© 2024 ItsAI.Help. All rights reserved.</p>
           </div>

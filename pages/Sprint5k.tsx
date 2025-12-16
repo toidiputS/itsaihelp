@@ -3,9 +3,8 @@ import React from "react";
 
 const Sprint5k: React.FC = () => {
   const handleJoinSprint = () => {
-    // TODO: replace with real checkout URL for the Sprint
-    // e.g. window.location.href = "https://your-checkout-link/sprint";
-    alert("Connect this button to your 5K Sprint checkout URL.");
+    // Stripe payment link for the $297 sprint
+    window.location.href = "https://buy.stripe.com/cNi9AVcbb5A377Zady1VK01";
   };
 
   const handleViewPromptingCourse = () => {
@@ -72,7 +71,7 @@ const Sprint5k: React.FC = () => {
         {/* WHAT'S INSIDE – WEEKS */}
         <section className="space-y-4">
           <h2 className="text-xl md:text-2xl font-semibold text-center">
-            What&apos;s Inside The Sprint
+            What's Inside The Sprint
           </h2>
           <p className="text-center text-slate-300">
             30-day starter program. One goal: help you build something that can
@@ -83,10 +82,10 @@ const Sprint5k: React.FC = () => {
             <div className="card-gold p-5 text-sm">
               <h3 className="font-semibold text-lg mb-2">Week 1 – Build Your First Money Machine</h3>
               <ul className="space-y-1 text-slate-300">
-                <li>• Pick your lane: prompt packs, DFY services, or AI assistants.</li>
+                <li>• Pick your lane: prompt packs, AI services, or AI assistants.</li>
                 <li>• Build a simple, validated offer using ItsAI.Help frameworks.</li>
                 <li>• Set up a no-friction checkout link.</li>
-                <li>• Create a quick offer page that doesn&apos;t need a designer.</li>
+                <li>• Create a quick offer page that doesn't need a designer.</li>
                 <li>• Publish your first "value proof" post.</li>
               </ul>
             </div>
@@ -108,7 +107,7 @@ const Sprint5k: React.FC = () => {
                 <li>• $0 → $500 warm outreach plan.</li>
                 <li>• "Help 10 people today" method for instant trust.</li>
                 <li>• Turn one prompt pack into a $29 intro product.</li>
-                <li>• Start selling your DFY offers for real money.</li>
+                <li>• Start selling your AI offers for real money.</li>
                 <li>• Collect testimonials and proof.</li>
               </ul>
             </div>
@@ -153,7 +152,7 @@ const Sprint5k: React.FC = () => {
                   <li>• Offer, traffic, and sales frameworks</li>
                   <li>• Video lessons + templates</li>
                   <li>• Private community access</li>
-                  <li>• Weekly live Q&amp;A / office hours</li>
+                  <li>• Weekly live Q&A / office hours</li>
                 </ul>
               </div>
               <button
@@ -176,9 +175,9 @@ const Sprint5k: React.FC = () => {
                 <p className="text-xs text-slate-400 mb-3">One-time payment · Course + templates</p>
                 <ul className="text-sm text-slate-300 space-y-1 mb-4">
                   <li>• Prompting mental models</li>
-                  <li>• Persona &amp; role prompts</li>
-                  <li>• Context &amp; output control frameworks</li>
-                  <li>• Chain-of-thought &amp; tree-of-thought patterns</li>
+                  <li>• Persona & role prompts</li>
+                  <li>• Context & output control frameworks</li>
+                  <li>• Chain-of-thought & tree-of-thought patterns</li>
                   <li>• Reusable Prompt OS template</li>
                 </ul>
               </div>
@@ -203,13 +202,13 @@ const Sprint5k: React.FC = () => {
             </p>
             <ul className="space-y-1 text-slate-300">
               <li>• All 4 prompt packs (including Content Reactor)</li>
-              <li>• DFY Lab templates (bios, emails, content board)</li>
+              <li>• AI templates (bios, emails, content board)</li>
               <li>• ItsAI.Help Content Director™ assistant</li>
               <li>• ItsAI.Help Email Architect™ assistant</li>
-              <li>• Lifetime updates to packs &amp; tools</li>
+              <li>• Lifetime updates to packs & tools</li>
             </ul>
             <p className="text-xs text-slate-400 mt-3">
-              You&apos;ll get an email with your Lifetime Pack access as soon as both
+              You'll get an email with your Lifetime Pack access as soon as both
               purchases are confirmed.
             </p>
           </div>

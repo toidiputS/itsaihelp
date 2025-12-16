@@ -15,10 +15,8 @@ import React from "react";
 
 const ContentReactorPack: React.FC = () => {
     const handleBuyClick = () => {
-        // TODO: Replace this with your real checkout URL (Stripe, LemonSqueezy, etc.)
-        // Example:
-        // window.location.href = "https://your-checkout-url-here";
-        alert("Hook this button up to your real checkout URL.");
+        // Stripe payment link
+        window.location.href = "https://buy.stripe.com/3cI4gB5MN7Ibakb2L61VK00";
     };
 
     return (

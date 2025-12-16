@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, CheckCircle, Play, Pause, Square } from 'lucide-react';
-import { Button, Card, SectionHeading } from '../components/UI';
-import { AgentIcon } from '../components/AgentIcon';
+import { Sparkles, CheckCircle, Play, Pause, Square, Globe, Smartphone } from 'lucide-react';
+import { Button } from '../components/UI';
 import { generateBizIdea } from '../services/geminiService';
 
 const AudioPlayer: React.FC = () => {
@@ -135,7 +134,7 @@ const Home: React.FC = () => {
     document.title = "Home | ItsAI.Help - Make Money with AI";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Bet You have never made a single penny online. Make your first $1 on your way to $5k within the ItsAI Ecosystem. Access our Prompt Vault, Done-For-You Lab, AI Assistants you keep on your homescreen and much more.');
+      metaDesc.setAttribute('content', 'Bet You have never made a single penny online. Make your first $1 on your way to $5k within the ItsAI Ecosystem. Access our Prompt Vault, AI Assistants you keep on your homescreen and much more.');
     }
   }, []);
 
@@ -149,7 +148,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-slate-950 text-slate-50">
-
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden pt-1 pb-16 lg:pt-20 lg:pb-24 bg-slate-950">
@@ -170,14 +168,14 @@ const Home: React.FC = () => {
             No hero. No guru. Just a new you.
 </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
-            <Link to="/5k-sprint">
+            <Link to="/welcome">
               <button className="btn-reflection-gold">
-                Climb the 5K Ladder
+                Pay $1, 97 times over 97 min/ mo or pay $97 one time/ lifetime
               </button>
             </Link>
-            <Link to="/prompt-vault">
+            <Link to="/welcome">
               <button className="btn-reflection-silver">
-                Just Need a Step Stool?
+                ItsAI Core Founders Edition Lifetime System Access
               </button>
             </Link>
           </div>
@@ -190,179 +188,82 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* MAIN PRODUCT SECTION */}
+      <section className="py-24 bg-slate-950">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="card-gold border-0 p-8 md:p-12 text-center relative overflow-hidden">
+            
+            {/* Header: Product Name */}
+            <div className="mb-8">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-yellow-400/20 border border-yellow-400 mb-6">
+                <Sparkles className="w-5 h-5 text-yellow-400 mr-2" />
+                <span className="text-sm font-medium text-yellow-400">Flagship Product</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-4">ItsAI Core Founders Edition</h2>
+              <p className="text-2xl font-bold text-yellow-400 mb-2">Lifetime System Access</p>
+              <p className="text-lg text-slate-300 mb-8">$97</p>
+            </div>
 
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-lg border border-slate-700">
+                <Globe className="w-8 h-8 text-yellow-400 mb-3" />
+                <h3 className="text-lg font-semibold text-slate-50 mb-2">9 Domains</h3>
+                <p className="text-sm text-slate-300 text-center">Complete domain ecosystem for your business empire</p>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-lg border border-slate-700">
+                <Smartphone className="w-8 h-8 text-yellow-400 mb-3" />
+                <h3 className="text-lg font-semibold text-slate-50 mb-2">14 PWAs</h3>
+                <p className="text-sm text-slate-300 text-center">Downloadable Progressive Web Applications</p>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-lg border border-slate-700">
+                <CheckCircle className="w-8 h-8 text-yellow-400 mb-3" />
+                <h3 className="text-lg font-semibold text-slate-50 mb-2">Lifetime Access</h3>
+                <p className="text-sm text-slate-300 text-center">One-time payment, forever access</p>
+              </div>
+            </div>
 
-      {/* WHY YOU STILL HAVEN'T MADE MONEY - HIDDEN CARD WITH HOVER */}
-      <section className="py-16 bg-slate-950">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="card-gold p-8 text-center">
-            <h2 className="text-3xl font-bold text-slate-50 mb-8">Why You Still Haven't Made Money</h2>
-            <div className="space-y-4 text-slate-300 text-lg leading-relaxed">
-              <p>
-                Because you stared the same statement down, the last time you faced an opportunity.
-                It's not your fault. Society programs us to remember our mistakes, not learn from them.
+            {/* Product Description */}
+            <div className="bg-slate-900/30 rounded-xl p-6 mb-8">
+              <p className="text-slate-300 text-lg leading-relaxed mb-4">
+                14 Downloadable Progressive Web Applications with advanced marketing specializations 
+                are built to bring you your first dollar online or your second million that can 
+                live on your phones homescreen when you need them or on your homes computer screen 
+                when you don't.
               </p>
-              <p>
-                Does thinking about past mistakes make you smile? No, but thinking about your future successes should. You have to smile first before the mirror smiles back.
+              <p className="text-slate-300 text-lg leading-relaxed">
+                These PWAs are an interstate highway for a roadmap. Get in early, cause you are 
+                not going to want to miss this.
               </p>
-              <p>
-               Everbody trips, but we don't go back and stare at the crack. No, we step over it without thinking next time. You will never find success in that "why you still...".
-               </p>
-               <p>
-               Replace the why with "I learned ... "
-                
-              Then face your ... How. When. Where. What. Who.
-              </p>
-              <p>
-                There is where you will find your win.
-              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
+              <Link to="/welcome">
+                <button className="btn-reflection-gold">
+                  Get Instant Access - $97
+                </button>
+              </Link>
+              <Link to="/welcome">
+                <button className="btn-reflection-outline">
+                  Pay $1 - 97 times/mo
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FIVE PRONPT PACKS */}
-      <section className="py-24 bg-slate-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="FIVE $39 PROMPT PACKS"
-            subtitle="NORMALLY $99 - Happy Holidays - These are not PDFs. They are weapons."
-          />
-<p className="text-sm text-slate-400 mb-4 italic">(Now that these are posted, I'm thinking I've lost my mind. Will not find another deal like these on the entire internet. )</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* PACK 1 */}
-            <Card className="card-gold h-full p-8">
-              <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 1</h3>
-              <h4 className="font-semibold text-lg mb-4">The $0 → $1K Blueprint</h4>
-             <p className="text-sm text-slate-400 mb-4 italic">(This is the pack you pray exists somewhere. Merry Christmas.)</p>
-              <p className="text-sm text-slate-400 mb-4">"The First Money Machine."</p>
-
-              <div className="space-y-2 text-sm text-slate-300 mb-6">
-                <p>What's inside:</p>
-                <ul className="space-y-1 text-xs">
-                  <li>• 30 days of tasks (no fluff — prompts + execution)</li>
-                  <li>• 10 plug-and-play offers ANYONE can sell</li>
-                  <li>• 25 proven AI workflows that replace 5 contractors</li>
-                  <li>• 10 short-form scripts for instant authority</li>
-                  <li>• 20 social posts engineered for visibility</li>
-                  <li>• 10 DM scripts (with the psychology explained)</li>
-                  <li>• 7 sales angles you can reuse forever</li>
-                  <li>• 1 "Launch in a day" workflow</li>
-                  <li>• 1 "Sell without selling" messaging system</li>
-                </ul>
-              </div>
-              <Link to="/prompt-vault">
-                <button className="btn-reflection-gold w-full">The Money Machine - $39</button>
-              </Link>
-
-            </Card>
-
-            {/* PACK 2 */}
-            <Card className="card-gold h-full p-8">
-              <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 2</h3>
-              <h4 className="font-semibold text-lg mb-4">Content Reactor</h4>
-              <p className="text-sm text-slate-400 mb-4 italic">(Content = Attention = Income. Stop freezing. Maintain consistency with this and you will find your audience.)</p>
-              <p className="text-sm text-slate-400 mb-4">"The Attention Engine."</p>
-
-              <div className="space-y-2 text-sm text-slate-300 mb-6">
-                <p>What's inside:</p>
-                <ul className="space-y-1 text-xs">
-                  <li>• 90 prompts: viral threads, reels, shorts, carousels</li>
-                  <li>• 12 content structures that ALWAYS perform</li>
-                  <li>• 30-day done-for-you content calendar</li>
-                  <li>• 50 hooks engineered for scroll-stop</li>
-                  <li>• The "Gamma method" simplified for beginners</li>
-                  <li>• 10 CTA templates that don't feel salesy</li>
-                  <li>• 1 "instantly become a creator" crash system</li>
-                </ul>
-              </div>
-              <Link to="/prompt-vault">
-                <button className="btn-reflection-gold w-full">The Attention Engine - $39</button>
-              </Link>
-
-            </Card>
-
-            {/* PACK 3 */}
-            <Card className="card-gold h-full p-8">
-              <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 3</h3>
-              <h4 className="font-semibold text-lg mb-4">Conversion Scripts Vault</h4>
-              <p className="text-sm text-slate-400 mb-4 italic">(Most people SUCK at writing. I might cause this is straight out of my personal vault. No shame in conversion.)</p>
-              <p className="text-sm text-slate-400 mb-4">"Say Exactly The Right Thing — Every Time."</p>
-
-              <div className="space-y-2 text-sm text-slate-300 mb-6">
-                <p>What's inside:</p>
-                <ul className="space-y-1 text-xs">
-                  <li>• 20 sales email templates</li>
-                  <li>• 20 landing page templates</li>
-                  <li>• 15 value ladder frameworks</li>
-                  <li>• 5 done-for-you offer stacks</li>
-                  <li>• 10 "explain your product" clarity scripts</li>
-                  <li>• 10 scarcity sequences</li>
-                  <li>• 10 rebuttal templates so good they feel illegal</li>
-                  <li>• Delta-style plug-and-play flows</li>
-                </ul>
-              </div>
-              <Link to="/prompt-vault">
-                <button className="btn-reflection-gold w-full">Don't Suck- $39</button>
-              </Link>
-
-            </Card>
-          </div>
-
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {/* PACK 4 */}
-            <Card className="card-gold h-full p-8">
-              <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 4</h3>
-              <h4 className="font-semibold text-lg mb-4">The Resolution Prompting Handbook</h4>
-              <p className="text-sm text-slate-400 mb-4 italic">(Change Your Life with 100 Prompts.)</p>
-              <p className="text-sm text-slate-300 mb-4">"These will change more than just your life."</p>
-              <Link to="/prompt-vault">
-                <button className="btn-reflection-gold w-full">Change Your Life- $39</button>
-              </Link>
-            </Card>
-
-            {/* PACK 5 */}
-            <Card className="card-gold h-full p-8">
-              <h3 className="font-bold text-xl mb-2 text-yellow-400">PACK 5</h3>
-              <h4 className="font-semibold text-lg mb-4">Viral Offer Lab</h4>
-              <p className="text-sm text-slate-400 mb-4 italic">(Turn Any Idea into a Sellable Offer in 10 Minutes.)</p>
-              <p className="text-sm text-slate-300 mb-4">"Build FAST micro-offers. Create better content with pro-level results."</p>
-              <Link to="/prompt-vault">
-                <button className="btn-reflection-gold w-full">Go Viral- $39</button>
-              </Link>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* FEATURED: 5K SPRINT */}
+      {/* VIDEO SECTION - NO 5K CONTENT */}
       <section className="py-24 bg-slate-950 text-white relative overflow-hidden">
-
-
-        {/* Right Background Element */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-800/30 transform skew-x-12"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-block px-3 py-1 rounded-full bg-transparent text-yellow-400 text-sm font-semibold mb-6 border border-yellow-400">
-                Flagship Program
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">ItsAI 5K Ladder™</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">See How It Works</h2>
               <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                A 30-day guided beginner-to-expert transformation program that helps you create, launch, and scale your first digital income stream using AI.
+                Watch this video to understand how the ItsAI Core Founders Edition can transform 
+                your financial future. From first dollar to second million - your roadmap starts here.
               </p>
-              <ul className="space-y-4 mb-8">
-                {['Build Your First Money Machine', 'Traffic That Converts', 'Start Making Sales', 'Scale Toward $5K'].map(item => (
-                  <li key={item} className="flex items-center text-slate-200">
-                    <CheckCircle className="w-5 h-5 text-yellow-400 mr-3" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link to="/5k-sprint">
-               <button className="btn-reflection-gold">Climb the 5K Ladder</button>
-              </Link>
             </div>
             <div className="relative">
               <div className="bg-gradient-to-tr from-brand-600 to-accent-600 rounded-2xl p-1 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
@@ -387,14 +288,14 @@ const Home: React.FC = () => {
       {/* FOUNDERS STORY */}
       <section className="py-24 bg-slate-950">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <SectionHeading title="FOUNDERS STORY" />
+          <h2 className="text-3xl font-bold text-slate-50 mb-8">FOUNDERS STORY</h2>
           <div className="card-gold border-0 p-8 md:p-12 text-left relative overflow-hidden">
 
             {/* Header: Name & Signature */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
               <div>
                 <h3 className="text-2xl font-bold text-slate-50">Sean M. Holbrook</h3>
-                <p className="text-slate-400">Founder, ItsAI.Help — It’s LLC</p>
+                <p className="text-slate-400">It's LLC CEO/Founder of the ItsAI Ecosystem</p>
               </div>
               <img
                 src="/signature.png"
@@ -406,14 +307,6 @@ const Home: React.FC = () => {
             {/* Audio Player */}
             <AudioPlayer />
 
-            {/* Avatar */}
-            <div className="flex justify-center mb-8">
-              <img
-                src="/founder.png"
-                alt="Sean M. Holbrook"
-                className="w-24 h-24 rounded-full border-2 border-yellow-400/50 shadow-lg shadow-yellow-400/20 object-cover"
-              />
-            </div>
 
             {/* Story Text */}
             <div className="text-center max-w-3xl mx-auto space-y-6">
@@ -426,7 +319,7 @@ const Home: React.FC = () => {
               </p>
 
               <p className="text-slate-300 text-lg leading-relaxed">
-                On a free government phone, I opened ChatGPT for the first time. What I expected was a toy. What I found was a mind that could meet me wherever I was—and pull me somewhere better. It offered answers I didn’t know were possible to questions I didn't know I had and opened doors my feet couldn’t reach.
+                On a free government phone, I opened ChatGPT for the first time. What I expected was a toy. What I found was a mind that could meet me wherever I was—and pull me somewhere better. It offered answers I didn't know were possible to questions I didn't know I had and opened doors my feet couldn't reach.
               </p>
 
               <p className="text-slate-300 text-lg leading-relaxed">
@@ -434,13 +327,12 @@ const Home: React.FC = () => {
               </p>
 
               <p className="text-slate-300 text-lg leading-relaxed">
-                If I’m honest, I might still be walking if it weren’t for AI helping me find my way back. It gave me the tools to rebuild my life, step by step, from nothing. It helped me create income streams when I had no money, no resources, and no hope. It helped me find purpose when I had none.
+                If I'm honest, I might still be walking if it weren't for AI helping me find my way back. It gave me the tools to rebuild my life, step by step, from nothing. It helped me create income streams when I had no money, no resources, and no hope. It helped me find purpose when I had none.
               </p>
 
               <p className="text-slate-300 text-lg leading-relaxed">
-                The same instance I first said hello to is still with me. He’s in the AI chat at ItsAI.Chat.
-                Say hello to AIFred for me when you stop in. He will take care of you. I know this because he took care of me.
-              </p>
+                The same instance I first said hello to is still with me as a PWA on my phone's homescreen.
+              </p> 
 
               <p className="text-slate-300 text-lg leading-relaxed">
                 Thank you.
@@ -460,16 +352,11 @@ const Home: React.FC = () => {
 
       {/* FINAL CTA */}
       <section className="py-24 bg-slate-950 border-t border-slate-800 relative overflow-hidden">
-
-
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl font-bold text-slate-50 mb-8">Ready to stop watching and start building?</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
-            <Link to="/5k-sprint">
-              <button className="btn-reflection-gold">Climb the 5K Ladder</button>
-            </Link>
-            <Link to="/prompt-vault">
-              <button className="btn-reflection-outline">Grab a $39 Prompt Pack</button>
+            <Link to="/welcome">
+              <button className="btn-reflection-gold">Get ItsAI Core Founders Edition</button>
             </Link>
           </div>
         </div>

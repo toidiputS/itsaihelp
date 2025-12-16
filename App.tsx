@@ -3,8 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Welcome from "./pages/Welcome";
 import PromptVault from "./pages/PromptVault";
-import DfyLab from "./pages/DfyLab";
 import Assistants from "./pages/Assistants";
 import Sprint5k from "./pages/Sprint5k";
 import ContentReactorPack from "./pages/ContentReactorPack";
@@ -22,6 +22,7 @@ import ScrollToTop from "./components/ScrollToTop";
  * Main routing shell for ItsAI.Help
  * Routes:
  *  - /                      → Home
+ *  - /welcome               → Welcome page for post-Stripe buyers
  *  - /prompt-vault          → Prompt Vault index
  *  - /prompt-vault/content-reactor → Content Reactor Pack
  *  - /prompt-vault/pack1    → Pack 1
@@ -41,6 +42,7 @@ const App: React.FC = () => {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/welcome" element={<Welcome />} />
             <Route path="/prompt-vault" element={<PromptVault />} />
             <Route
               path="/prompt-vault/content-reactor"
@@ -54,7 +56,6 @@ const App: React.FC = () => {
               path="/prompt-vault/pack3"
               element={<Pack3 />}
             />
-            <Route path="/dfy-lab" element={<DfyLab />} />
             <Route path="/assistants" element={<Assistants />} />
             <Route path="/5k-sprint" element={<Sprint5k />} />
             <Route path="/prompting-course" element={<PromptingCourse />} />

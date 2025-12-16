@@ -2,9 +2,8 @@ import React from "react";
 
 const PromptingCourse: React.FC = () => {
     const handleBuyCourse = () => {
-        // TODO: replace with real checkout URL for the course
-        // e.g. window.location.href = "https://your-checkout-link/foundations";
-        alert("Connect this button to your AI Prompting Foundations checkout URL.");
+        // Stripe payment link for the $97 course
+        window.location.href = "https://buy.stripe.com/28E14p0stbYrcsjdpK1VK02";
     };
 
     const handleViewSprint = () => {
@@ -40,7 +39,7 @@ const PromptingCourse: React.FC = () => {
                 {/* WHAT YOU LEARN */}
                 <section className="space-y-4">
                     <h2 className="text-xl md:text-2xl font-semibold">
-                        What you&apos;ll learn
+                        What you'll learn
                     </h2>
                     <div className="grid md:grid-cols-2 gap-4 text-sm text-slate-200">
                         <div className="card-gold p-4">
@@ -51,14 +50,14 @@ const PromptingCourse: React.FC = () => {
                             </p>
                         </div>
                         <div className="card-gold p-4">
-                            <h3 className="font-semibold mb-1">Persona &amp; Role Prompts</h3>
+                            <h3 className="font-semibold mb-1">Persona & Role Prompts</h3>
                             <p className="text-slate-300">
                                 Build clear roles for your AI: strategist, copywriter, researcher,
                                 editor, coach. Get expert-level answers with one instruction.
                             </p>
                         </div>
                         <div className="card-gold p-4">
-                            <h3 className="font-semibold mb-1">Context &amp; Output Control</h3>
+                            <h3 className="font-semibold mb-1">Context & Output Control</h3>
                             <p className="text-slate-300">
                                 Feed AI the right context and constraints so hallucinations drop
                                 and outputs stay inside your brand voice and format.
@@ -94,16 +93,16 @@ const PromptingCourse: React.FC = () => {
                         Want the full system?
                     </h2>
                     <p className="text-slate-300 mb-2">
-                        You can start with the Foundations course alone for $97. When you&apos;re
+                        You can start with the Foundations course alone for $97. When you're
                         ready to execute, add the ItsAI.Help 5K Sprint™. Once you own both, you
                         unlock the ItsAI.Help Lifetime Pack for free:
                     </p>
                     <ul className="space-y-1 text-slate-300">
                         <li>• All 4 ItsAI.Help prompt packs</li>
-                        <li>• DFY Lab templates (bios, emails, content board)</li>
+                        <li>• AI templates (bios, emails, content board)</li>
                         <li>• ItsAI.Help Content Director™ assistant</li>
                         <li>• ItsAI.Help Email Architect™ assistant</li>
-                        <li>• Lifetime updates to packs &amp; tools</li>
+                        <li>• Lifetime updates to packs & tools</li>
                     </ul>
                     <button
                         onClick={handleViewSprint}

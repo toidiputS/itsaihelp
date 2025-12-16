@@ -17,6 +17,8 @@ import { Card } from "../components/UI";
  */
 
 const PromptVault: React.FC = () => {
+  const stripePaymentLink = "https://buy.stripe.com/3cI4gB5MN7Ibakb2L61VK00";
+
   return (
     <main className="max-w-5xl mx-auto px-4 py-12">
       <h1 className="text-3xl md:text-4xl font-bold text-slate-50 mb-2">
@@ -57,12 +59,14 @@ const PromptVault: React.FC = () => {
 
           <div>
             <p className="text-slate-100 font-semibold text-lg">$39</p>
-            <Link
-              to="/prompt-vault/pack1"
+            <a
+              href={stripePaymentLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
             >
-              View Details
-            </Link>
+              Purchase Now
+            </a>
           </div>
         </Card>
 
@@ -88,12 +92,14 @@ const PromptVault: React.FC = () => {
 
           <div>
             <p className="text-slate-100 font-semibold text-lg">$39</p>
-            <Link
-              to="/prompt-vault/content-reactor"
+            <a
+              href={stripePaymentLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
             >
-              View Details
-            </Link>
+              Purchase Now
+            </a>
           </div>
         </Card>
 
@@ -120,12 +126,14 @@ const PromptVault: React.FC = () => {
 
           <div>
             <p className="text-slate-100 font-semibold text-lg">$39</p>
-            <Link
-              to="/prompt-vault/pack3"
+            <a
+              href={stripePaymentLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
             >
-              View Details
-            </Link>
+              Purchase Now
+            </a>
           </div>
         </Card>
       </div>
@@ -137,6 +145,32 @@ const PromptVault: React.FC = () => {
           <h4 className="font-semibold text-lg mb-4">The Resolution Prompting Handbook</h4>
           <p className="text-sm text-slate-400 mb-4 italic">(Change Your Life with 100 Prompts.)</p>
           <p className="text-slate-300 mb-4">"These will change more than just your life."</p>
+
+          <div className="space-y-2 text-sm text-slate-300 mb-6">
+            <p>What's inside:</p>
+            <ul className="space-y-1 text-xs">
+              <li>• 100 life-changing prompts for personal transformation</li>
+              <li>• Goal-setting and achievement frameworks</li>
+              <li>• Mindset shifting techniques</li>
+              <li>• Productivity and focus enhancers</li>
+              <li>• Relationship and communication scripts</li>
+              <li>• Career and business growth prompts</li>
+              <li>• Health and wellness transformations</li>
+              <li>• Daily habit-building systems</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-slate-100 font-semibold text-lg">$39</p>
+            <a
+              href={stripePaymentLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
+            >
+              Purchase Now
+            </a>
+          </div>
         </Card>
 
         {/* PACK 5 */}
@@ -145,6 +179,32 @@ const PromptVault: React.FC = () => {
           <h4 className="font-semibold text-lg mb-4">Viral Offer Lab</h4>
           <p className="text-sm text-slate-400 mb-4 italic">(Turn Any Idea into a Sellable Offer in 10 Minutes.)</p>
           <p className="text-slate-300 mb-4">"How FAST can you build a micro-offer. Create better content with pro-level results."</p>
+
+          <div className="space-y-2 text-sm text-slate-300 mb-6">
+            <p>What's inside:</p>
+            <ul className="space-y-1 text-xs">
+              <li>• 50 proven offer templates</li>
+              <li>• Pricing psychology frameworks</li>
+              <li>• Market validation scripts</li>
+              <li>• Value proposition builders</li>
+              <li>• Launch sequence templates</li>
+              <li>• Customer objection handlers</li>
+              <li>• Upsell and cross-sell systems</li>
+              <li>• Viral marketing hooks</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-slate-100 font-semibold text-lg">$39</p>
+            <a
+              href={stripePaymentLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-black text-sm font-semibold transition-colors"
+            >
+              Purchase Now
+            </a>
+          </div>
         </Card>
       </div>
     </main>

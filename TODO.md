@@ -1,23 +1,19 @@
-# Fix Safari Importmap Warning
+# Footer.tsx Fix Task
 
-## Task Overview
-Fix the Microsoft Edge Tools Warning about script[type=importmap] not being supported by Safari on iOS < 16.4
+## Issues to Address:
+- [x] Fix accessibility warning: Add title attributes to social media links
+- [x] Install @types/react package to resolve TypeScript declaration error
 
-## Steps
-- [x] Analyze current importmap implementation and dependencies
-- [x] Research Safari compatibility solutions for importmaps
-- [x] Implement alternative approach that's Safari-compatible
-- [x] Replace static importmap with dynamic script creation
-- [ ] Test the fix to ensure the warning is resolved
-- [ ] Verify all React dependencies still work correctly
+## Implementation Steps:
+- [x] Read current Footer.tsx content
+- [x] Add title attributes to Twitter, Youtube, and Mail links for accessibility
+- [x] Install @types/react package via npm
+- [x] Verify the fixes work correctly
 
-## Current Issue
-Line 50 in index.html: 'script[type=importmap]' is not supported by Safari on iOS < 16.4
-The importmap is used for loading React, React-DOM, React-Router-DOM, lucide-react, and @google/genai from CDN.
+## Summary:
+✅ **Accessibility Fix**: Added descriptive title attributes to social media links:
+- Twitter link: `title="Visit our Twitter"`
+- YouTube link: `title="Visit our YouTube channel"`
+- Mail link: `title="Send us an email"`
 
-## Solution Implemented
-Replaced the static `<script type="importmap">` with a dynamic script that creates the importmap using JavaScript after the DOM is loaded. This approach:
-1. Uses the existing es-module-shims polyfill
-2. Dynamically creates and appends the importmap script element
-3. Works with Safari's older version limitations
-4. Maintains all the same module mappings
+✅ **TypeScript Fix**: Installed @types/react package via npm, resolving the declaration file warning.

@@ -10,7 +10,6 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Prompt Vault', path: '/prompt-vault' },
-    { name: 'DFY Lab', path: '/dfy-lab' },
     { name: 'Assistants', path: '/assistants' },
   ];
 
