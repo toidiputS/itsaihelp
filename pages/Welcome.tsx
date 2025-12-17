@@ -8,7 +8,7 @@ const Welcome: React.FC = () => {
     document.title = "Welcome | ItsAI.Help - Access Granted";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Welcome to ItsAI Core Founders Edition. Your lifetime access to 9 domains and 14 Progressive Web Applications is now active.');
+      metaDesc.setAttribute('content', 'Welcome to ItsAI Core Founders Edition. Your are now active.');
     }
   }, []);
 
@@ -25,12 +25,12 @@ const Welcome: React.FC = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-slate-50 tracking-tight mb-6">
-            Welcome to Your New Life
+            Welcome to A New You
           </h1>
 
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
             Congratulations! You're now part of the ItsAI Core Founders Edition. 
-            Your journey from first dollar to second million starts now.
+            Your journey begins here.
           </p>
 
           {/* Product Details Card */}

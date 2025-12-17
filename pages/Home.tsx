@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, CheckCircle, Play, Pause, Square, Globe, Smartphone } from 'lucide-react';
+import { Sparkles, CheckCircle, Play, Pause, Square, Globe, Smartphone, Compass, Unlock, Crown } from 'lucide-react';
 import { Button } from '../components/UI';
 import { generateBizIdea } from '../services/geminiService';
 
@@ -154,15 +154,15 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="inline-flex items-center px-2 py-1 rounded-full bg-transparent border-2 mb-10 border-yellow-400 animate-pulse">
             <span className="flex h-2 w-2 rounded-full bg-yellow-400 mr-2 animate-pulse"></span>
-            <span className="text-xs font-medium text-yellow-400">The 5K Ladder is Open</span>
+            <span className="text-xs font-medium text-yellow-400">Founders Lifetime Available</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-50 tracking-tight mb-6">
-            I Bet You've Never Made a Single Penny Online.
+            Everything I have built exists because I needed something to work.
           </h1>
 
           <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-300 mb-10">
-            99% of people that try, never do. If you're here, you are meant to be, because I don't advertise. Welcome. Lets get you that first $1. Mine was made on fast food Wi-Fi with a free government phone less than one year ago.
+            I only share it here because what I built, did work. Now it's your turn to turn a vague service idea into a clear, live, scalable offer and I can show you how to do it in the next 48 hrs.
           </p>
            <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-300 mb-10">
             No hero. No guru. Just a new you.
@@ -170,7 +170,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
             <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
               <button className="btn-reflection-gold">
-                $97 Founders lifetime
+                Unlock Lifetime Access — $97
               </button>
             </a>
           
@@ -195,56 +195,54 @@ const Home: React.FC = () => {
                 <Sparkles className="w-5 h-5 text-yellow-400 mr-2" />
                 <span className="text-sm font-medium text-yellow-400">Flagship Product</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-4">ItsAI Core Founders Edition</h2>
-              <p className="text-2xl font-bold text-yellow-400 mb-2">Lifetime System Access</p>
-              <p className="text-lg text-slate-300 mb-8">$97</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-4">ItsAI Core — Founders Edition</h2>
+              <p className="text-2xl font-bold text-yellow-400 mb-2">Lifetime access to the ItsAI execution system</p>
+              <p className="text-lg text-slate-300 mb-8">$97 · One-time</p>
             </div>
 
-            {/* Features Grid */}
+            {/* Value Blocks */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-lg border border-slate-700">
-                <Globe className="w-8 h-8 text-yellow-400 mb-3" />
-                <h3 className="text-lg font-semibold text-slate-50 mb-2">9 Domains</h3>
-                <p className="text-sm text-slate-300 text-center">Complete domain ecosystem for your business empire</p>
+                <Compass className="w-8 h-8 text-yellow-400 mb-3" />
+                <h3 className="text-lg font-semibold text-slate-50 mb-2">Guided Execution</h3>
+                <p className="text-sm text-slate-300 text-center">You are never dropped into a tool without direction.</p>
               </div>
               <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-lg border border-slate-700">
-                <Smartphone className="w-8 h-8 text-yellow-400 mb-3" />
-                <h3 className="text-lg font-semibold text-slate-50 mb-2">14 PWAs</h3>
-                <p className="text-sm text-slate-300 text-center">Downloadable Progressive Web Applications</p>
+                <Unlock className="w-8 h-8 text-yellow-400 mb-3" />
+                <h3 className="text-lg font-semibold text-slate-50 mb-2">Everything Unlocked</h3>
+                <p className="text-sm text-slate-300 text-center">All current and future system components included.</p>
               </div>
               <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-lg border border-slate-700">
-                <CheckCircle className="w-8 h-8 text-yellow-400 mb-3" />
-                <h3 className="text-lg font-semibold text-slate-50 mb-2">Lifetime Access</h3>
-                <p className="text-sm text-slate-300 text-center">One-time payment, forever access</p>
+                <Crown className="w-8 h-8 text-yellow-400 mb-3" />
+                <h3 className="text-lg font-semibold text-slate-50 mb-2">Founder Permanence</h3>
+                <p className="text-sm text-slate-300 text-center">One payment. No upgrades. No tiers later.</p>
               </div>
             </div>
 
             {/* Product Description */}
             <div className="bg-slate-900/30 rounded-xl p-6 mb-8">
-              <p className="text-slate-300 text-lg leading-relaxed mb-4">
-                14 Downloadable Progressive Web Applications with advanced marketing specializations 
-                are built to bring you your first dollar online or your second million that can 
-                live on your phones homescreen when you need them or on your homes computer screen 
-                when you don't.
-              </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                These PWAs are an interstate highway for a roadmap. Get in early, cause you are 
-                not going to want to miss this.
+                This is not a collection of tools.
+                It is a system that diagnoses what you need to do next and routes you there.
+              </p>
+              <p className="text-slate-300 text-lg leading-relaxed mt-4">
+                After purchase, you enter the system through a single interface.
+                From there, the system assembles workflows, tools, and execution paths for you — without guessing, browsing, or setup overhead.
+              </p>
+              <p className="text-slate-300 text-lg leading-relaxed mt-4">
+                Everything is installable. Everything works immediately.
+                Nothing is locked behind upgrades.
               </p>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
+            {/* CTA Button */}
+            <div className="flex flex-col justify-center gap-4 items-center">
               <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
                 <button className="btn-reflection-gold">
-                  founders Lifetime $97
+                  Unlock Lifetime Access — $97
                 </button>
               </a>
-              <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
-                <button className="btn-reflection-outline">
-                  Pay $1 - 97 times/mo
-                </button>
-              </a>
+              <p className="text-slate-400 text-sm">Founder access is limited only by time, not features.</p>
             </div>
           </div>
         </div>
@@ -352,7 +350,7 @@ const Home: React.FC = () => {
           <h2 className="text-3xl font-bold text-slate-50 mb-8">Ready to stop watching and start building?</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
             <a href="https://buy.stripe.com/00w9AV1wx8Mfbof71m1VK04" target="_blank" rel="noopener noreferrer">
-              <button className="btn-reflection-gold">Get ItsAI Core Founders Edition</button>
+              <button className="btn-reflection-gold">Unlock Lifetime Access — $97</button>
             </a>
           </div>
         </div>
