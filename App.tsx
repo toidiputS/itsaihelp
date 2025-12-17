@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Welcome from "./pages/Welcome";
+import Success from "./pages/Success";
 import Sprint5k from "./pages/Sprint5k";
 import ContentReactorPack from "./pages/ContentReactorPack";
 import Pack1 from "./pages/Pack1";
 import Pack3 from "./pages/Pack3";
 import PromptingCourse from "./pages/PromptingCourse";
 
+import RequireAccess from "./components/RequireAccess";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -20,7 +22,8 @@ import ScrollToTop from "./components/ScrollToTop";
  * Main routing shell for ItsAI.Help
  * Routes:
  *  - /                      → Home
- *  - /welcome               → Welcome page for post-Stripe buyers
+ *  - /success               → Stripe success landing page (grants access)
+ *  - /welcome               → Welcome page for post-Stripe buyers (requires access)
  *  - /prompt-vault          → Prompt Vault index
  *  - /prompt-vault/content-reactor → Content Reactor Pack
  *  - /prompt-vault/pack1    → Pack 1
@@ -40,7 +43,8 @@ const App: React.FC = () => {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="/welcome" element={<RequireAccess><Welcome /></RequireAccess>} />
             <Route
               path="/prompt-vault/content-reactor"
               element={<ContentReactorPack />}
