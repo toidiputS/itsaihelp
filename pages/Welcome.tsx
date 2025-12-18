@@ -24,7 +24,7 @@ const Welcome: React.FC = () => {
             </h1>
 
             <p className="text-xl text-slate-300 mb-8">
-              Enter the Oracle to explore all PWAs or get guided recommendations.
+              Access the Oracle — your index to every ItsAI PWA. Browse tools directly or get guided recommendations.
             </p>
 
             {/* Single CTA Button */}
@@ -33,6 +33,16 @@ const Welcome: React.FC = () => {
                 <button className="btn-reflection-gold text-xl px-8 py-4">
                   Enter the Oracle →
                 </button>
+              </a>
+            </div>
+
+            {/* Secondary text link */}
+            <div className="mt-4 text-sm text-slate-400">
+              <a
+                href="/pwas"
+                className="hover:text-slate-200 transition underline underline-offset-4"
+              >
+                View all PWAs →
               </a>
             </div>
 
