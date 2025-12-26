@@ -117,7 +117,7 @@ const AudioPlayer: React.FC = () => {
           <span className="text-xs text-slate-400 min-w-[30px]">{formatTime(duration)}</span>
         </div>
         <audio ref={audioRef} className="hidden">
-          <source src="/audio/walkwithme.mp3" type="audio/mpeg" />
+          <source src="/audio/Walk With Me.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
